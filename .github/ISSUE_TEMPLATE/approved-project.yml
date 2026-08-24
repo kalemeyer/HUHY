@@ -1,0 +1,49 @@
+name: Approved HUHY project
+description: Maintainer-only fallback for a problem that already passed HUHY safety review.
+title: "[HUHY-ID] "
+labels:
+  - "huhy:approved-for-incubation"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use only for safety-reviewed, publicly releasable work. Never paste the private intake record here.
+  - type: input
+    id: huhy_id
+    attributes:
+      label: HUHY record ID
+      placeholder: HUHY-XXXXXXXX
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Approved public problem brief
+      description: Describe only the reviewed, public problem pattern.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public sources and status
+      description: List canonical public sources, dates, and any unknowns.
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Initial risk
+      options:
+        - Low
+        - Medium
+        - High
+        - Unreviewed
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Information boundary
+      options:
+        - label: I confirm this issue contains only publicly released, non-sensitive information.
+          required: true

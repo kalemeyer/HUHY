@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Suggest a problem through HUHY
+    url: https://huhy-private-prototype.kalelmeyer.chatgpt.site/suggest
+    about: Use the private safety-screened intake instead of opening a raw GitHub issue.
