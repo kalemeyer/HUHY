@@ -32,6 +32,11 @@ the private reporting path in [SECURITY.md](SECURITY.md).
 The private intake record remains on the HUHY website. GitHub receives only the
 approved public problem brief.
 
+The website authenticates as a private GitHub App installed only on this
+repository. The app requests repository metadata read access and Issues
+read/write access. It uses short-lived installation tokens; no personal GitHub
+token is stored by HUHY.
+
 ## Status labels
 
 The website recognizes labels beginning with `huhy:`:
