@@ -1,6 +1,6 @@
 import { toolCatalog } from "@/app/data";
 
-const catalogSeedVersion = "2026-08-24-public-launch-1";
+const catalogSeedVersion = "2026-08-25-external-projects-1";
 
 export async function ensureToolsSeeded(db: D1Database): Promise<void> {
   const seeded = await db
