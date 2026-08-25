@@ -44,6 +44,7 @@ token is stored by HUHY.
 - [`.github/ISSUE_TEMPLATE`](.github/ISSUE_TEMPLATE) — reviewed project and public defect workflows
 - [`GOVERNANCE.md`](GOVERNANCE.md) — disposition and decision authority
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — contribution provenance and validation
+- [`docs/GITHUB-STARTER.md`](docs/GITHUB-STARTER.md) — first-time and no-code contributor guide
 - [`SECURITY.md`](SECURITY.md) — sensitive-information and vulnerability reporting
 
 ## Reddit guide prototype

@@ -21,6 +21,10 @@ when invited; do not copy or rebrand another project.
 
 ## How to contribute
 
+New to GitHub? Start with the plain-language
+[GitHub starter guide](docs/GITHUB-STARTER.md). It includes a no-code path, a
+browser-only contribution path, a volunteer message, and a glossary.
+
 1. Use [huhyproject.org](https://huhyproject.org) to suggest a new problem or recommend a tool.
 2. For an approved project, comment on its GitHub issue with the specific role you can fill.
 3. Fork the repository and open a focused pull request linked to the approved issue.
