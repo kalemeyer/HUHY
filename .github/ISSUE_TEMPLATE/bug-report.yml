@@ -1,0 +1,47 @@
+name: HUHY bug report
+description: Report a defect in the HUHY website or repository using public, non-sensitive information.
+title: "Bug: "
+labels:
+  - "bug"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use public, non-sensitive information only. Do not include personal data, internal screenshots, credentials, restricted-system details, or government-system vulnerabilities.
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Where is the problem?
+      options:
+        - HUHY website
+        - GitHub repository
+        - Reddit guide private playtest
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened?
+      description: Describe the public or synthetic behavior without sensitive details.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Safe reproduction
+      description: Provide the smallest public or synthetic steps that reproduce the problem.
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Information boundary
+      options:
+        - label: I confirm this report contains only publicly released, non-sensitive information.
+          required: true
+        - label: This is not a vulnerability report for a government system.
+          required: true

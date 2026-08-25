@@ -1,5 +1,11 @@
 blank_issues_enabled: false
 contact_links:
   - name: Suggest a problem through HUHY
-    url: https://huhy-private-prototype.kalelmeyer.chatgpt.site/suggest
-    about: Use the private safety-screened intake instead of opening a raw GitHub issue.
+    url: https://huhyproject.org/suggest
+    about: Use the safety-screened intake instead of opening a raw GitHub issue.
+  - name: Recommend or correct a tool
+    url: https://huhyproject.org/tools/recommend
+    about: Recommend a public tool or request a public listing correction.
+  - name: Report a security concern privately
+    url: https://github.com/kalemeyer/HUHY/security/advisories/new
+    about: Use private vulnerability reporting for HUHY security concerns. Do not submit sensitive government information.

@@ -17,3 +17,4 @@ Closes #
 - [ ] I identified private-capacity or authorized official-duty provenance.
 - [ ] I reviewed ownership and licensing for included material.
 - [ ] I named any source-review or maintenance impact.
+- [ ] My commits include DCO sign-off (`git commit -s`).

@@ -1,0 +1,8 @@
+import type { Metadata } from 'next';
+import { SiteFooter } from '../components/SiteFooter';
+import { SiteHeader } from '../components/SiteHeader';
+import { SuggestForm } from './SuggestForm';
+
+export const metadata: Metadata = { title:'Suggest an Airman Problem · HUHY', description:'Send a public-information-only problem to the HUHY safety review queue.', openGraph:{title:'Suggest an Airman Problem · HUHY',description:'Accountable, public-information-only problem intake.',images:[]}, twitter:{title:'Suggest an Airman Problem · HUHY',description:'Accountable, public-information-only problem intake.',images:[]} };
+
+export default function SuggestPage(){return <main><SiteHeader/><section className="page-hero"><p className="eyebrow">PROBLEM INTAKE</p><h1>Describe the problem—not the solution</h1><p>Explain a recurring issue using public, non-sensitive information. Technical language, rank, and a proposed app are not required.</p></section><section className="suggest-page-content"><div className="suggest-guidance"><div className="safe-card"><strong>Describe the general pattern</strong><p>Do not identify a person, mission, case, location, unit, record, screenshot, credential, or internal system.</p><span>If you are unsure whether information is public, leave it out.</span></div><div className="plain-card"><span>DISPOSITION POLICY</span><h2>Every safe submission receives a visible status.</h2><p>Triage may request clarification, research the need, combine related proposals, refer the submitter, or defer the work. A viable proposal can be declined only by the named HUHY Steward, with a reason and reopening condition.</p></div></div><div className="suggest-form-wrap"><SuggestForm/></div></section><SiteFooter/></main>}

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
+  "name": "huhy-guide",
+  "server": {
+    "dir": "dist/server",
+    "entry": "index.cjs"
+  },
+  "permissions": {
+    "http": {
+      "enable": false
+    },
+    "media": false,
+    "payments": false,
+    "realtime": false,
+    "redis": true,
+    "reddit": {
+      "enable": true
+    }
+  },
+  "triggers": {
+    "onPostSubmit": "/internal/triggers/post-submit",
+    "onCommentSubmit": "/internal/triggers/comment-submit"
+  },
+  "menu": {
+    "items": [
+      {
+        "label": "HUHY: set guidance",
+        "description": "Set the voice, direction, and public destination for HUHY drafts",
+        "location": "subreddit",
+        "forUserType": "moderator",
+        "endpoint": "/internal/menu/guidance"
+      },
+      {
+        "label": "HUHY: draft a reply",
+        "description": "Prepare a screened draft for human review; nothing is posted",
+        "location": ["post", "comment"],
+        "forUserType": "moderator",
+        "endpoint": "/internal/menu/draft"
+      },
+      {
+        "label": "HUHY: review latest draft",
+        "description": "Open the latest saved draft for review",
+        "location": "subreddit",
+        "forUserType": "moderator",
+        "endpoint": "/internal/menu/latest-draft"
+      },
+      {
+        "label": "HUHY: clear stored data",
+        "description": "Delete this installation's saved guidance and latest draft",
+        "location": "subreddit",
+        "forUserType": "moderator",
+        "endpoint": "/internal/menu/clear-data"
+      }
+    ]
+  },
+  "forms": {
+    "guidanceForm": "/internal/form/guidance",
+    "draftForm": "/internal/form/draft",
+    "reviewForm": "/internal/form/review",
+    "clearDataForm": "/internal/form/clear-data"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "sourceIgnores": ["coverage", "src/**/*.test.ts"]
+}
